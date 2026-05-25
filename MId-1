@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+float calculate(int num1, int num2, char symbol){
+    if (symbol == '+'){
+        return num1 + num2;
+    } else if (symbol == '-'){
+        return num1-num2;
+    } else if (symbol == '*'){
+        return num1*num2;
+    } else if (symbol == '/'){
+        return (float)num1/num2;
+    } else {
+        return 0.0;
+    }
+}
+
+int main(){
+    int num1;
+    int num2;
+    char symbol;
+    printf("Enter the first number : ");
+    scanf(" %d", &num1);
+    printf("Enter the second number : ");
+    scanf(" %d", &num2);
+    printf("Enter the operation symbol (+, -, *, /) : ");
+    scanf(" %c", &symbol);
+    printf("\n %f", calculate(num1,num2,symbol));
+    return 0;
+}
