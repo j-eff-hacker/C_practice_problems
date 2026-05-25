@@ -1,0 +1,12 @@
+ #include <stdio.h>
+
+int main() {
+    int num;
+    int count;
+    printf("Enter the number for the countdown : ");
+    scanf("%d", &num);
+    for (count=num;count>0;count--){
+        printf("%d \n", count);
+    }
+    printf("BLAST!!!!");
+}
