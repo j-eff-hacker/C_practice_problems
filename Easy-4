@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+    int array[5];
+    int num, index;
+    int sum = 0;
+    for (index=0;index<5;index++){
+        printf("Enter the number : ");
+        scanf("%d", &num);
+        array[index] = num;
+        sum = sum + num;
+    }
+    printf("The total is %d", sum);
+}
