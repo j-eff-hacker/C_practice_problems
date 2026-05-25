@@ -1,0 +1,31 @@
+ #include <stdio.h>
+
+int main(){
+
+    int array[8];
+
+    int index;
+
+    printf("Enter a number : ");
+
+    scanf(" %d", &array[0]);
+
+    int big_num = array[0];
+
+    for(index=1;index<8;index++){
+
+        printf("Enter a number : ");
+
+        scanf(" %d", &array[index]);
+
+        if (array[index-1] > big_num){
+
+            big_num = array[index];
+
+        }
+
+    }
+
+    printf("The largest number is %d", big_num);
+
+}
