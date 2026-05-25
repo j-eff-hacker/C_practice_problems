@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int vowel_check(char letter){
+    char vowels[5] = {'a','e','i','o','u'};
+    int index;
+    for (index=0;index<5;index++){
+        if (letter == vowels[index]){
+            return 0;
+        }
+    }
+}
+int main(){
+    int count=0;
+    int index;
+    char string[255];
+    printf("Enter the String input : ");
+    scanf("%s", string);
+    for (index=0;index<strlen(string);index++){
+        if (vowel_check(string[index]) == 0){
+            count = count + 1;
+        }
+    }
+    printf("%d", count);
+}
