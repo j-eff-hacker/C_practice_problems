@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int index;
+    int num;
+    printf("Enter the number : ");
+    scanf(" %d", &num);
+    
+    for (index=1;index<num+1;index++){
+        printf("%d X %d = %d\n", num, index, num*index);
+    }
+    return 0;
+}
