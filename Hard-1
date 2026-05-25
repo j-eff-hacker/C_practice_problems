@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    int top, bottom;
+    char string[255];
+    int palinrome = 1;
+    printf("Enter the word to be checked : ");
+    scanf(" %s", &string);
+    top = 0;
+    bottom = strlen(string)-1;
+    while (palinrome==1 && top<bottom){
+        if (string[top]!=string[bottom]){
+            palinrome = 0;
+        }else {
+            top=top+1;
+            bottom=bottom-1;
+        }
+    }
+    if (!palinrome){
+        printf("It is not a palinrome");
+    }else{
+        printf("It is a palinrome");
+    }
+}
