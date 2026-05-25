@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float convert_to_f(float cel){
+    float fah;
+    fah = (cel * (1.8)) + 32;
+    return fah;
+}
+
+int main() {
+    float celsius;
+    printf("Enter the temperature in celsius : ");
+    scanf("%f",&celsius);
+    printf("%f", convert_to_f(celsius));
+    return 0;
+}
